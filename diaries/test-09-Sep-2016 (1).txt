@@ -1,0 +1,11 @@
+Make new subject? (y/n){??? Operation terminated by user during ==> <a href="matlab:
+opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\bicomb_wrapper.m',14,0)">bicomb_wrapper at 14</a>
+} 
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+bicomb_wrapper
+
+Enter subject initials:test

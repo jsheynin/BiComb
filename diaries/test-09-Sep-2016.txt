@@ -1,0 +1,2538 @@
+Make new subject? (y/n)y
+
+Enter subject name:a
+
+Which eye will be patched? (L/R):L
+
+Enter any notes:{??? Error using ==> load
+Unable to read file amonitor.mat: No such file or directory.
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\bicomb_wrapper.m',32,0)">bicomb_wrapper>defexperiment at 32</a>
+load('amonitor.mat','MON'); % monitor file, currently a dummy
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\bicomb_wrapper.m',22,0)">bicomb_wrapper at 22</a>
+EX = defexperiment;
+} 
+builtin('cd','C:\Users\Alex\Dropbox\Experiments\BiComb\monitor');
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+bicomb_wrapper
+
+Enter subject initials:test
+
+Patching duration for this test session (in minutes)?:0
+
+Is this before/after patching? (B/A):B
+{??? Error using ==> transpose
+Transpose on ND array is not defined.
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\functions\bicomb_core.m',30,0)">bicomb_core at 30</a>
+    while ~any(isnan(reshape(RS.linePosition(:,iPolarity,:).',1,[])))
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\bicomb_wrapper.m',24,0)">bicomb_wrapper at 24</a>
+bicomb_core(EX,OB)
+} 
+ opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\functions\bicomb_core.m',30,0)
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+bicomb_wrapper
+
+Enter subject initials:test
+
+Patching duration for this test session (in minutes)?:0
+
+Is this before/after patching? (B/A):B
+{??? Reference to non-existent field 'sf'.
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\functions\bicomb_core.m',119,0)">bicomb_core>getgratstim at 119</a>
+    imSin = sin(u.*ST.sf+phaseRad);
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\functions\bicomb_core.m',54,0)">bicomb_core at 54</a>
+        imGrat(:,:,iEye) = getgratstim(ST);
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\bicomb_wrapper.m',24,0)">bicomb_wrapper at 24</a>
+bicomb_core(EX,OB)
+} 
+ opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\functions\bicomb_core.m',119,0)
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+bicomb_wrapper
+
+Enter subject initials:test
+
+Patching duration for this test session (in minutes)?:0
+
+Is this before/after patching? (B/A):b
+
+Is this before/after patching? (B/A):B
+{??? Reference to non-existent field 'spatSigmaDeg'.
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\functions\bicomb_core.m',134,0)">bicomb_core>getgratstim at 134</a>
+    imGauss = getgauss(64,ST.spatSigmaDeg);
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\functions\bicomb_core.m',54,0)">bicomb_core at 54</a>
+        imGrat(:,:,iEye) = getgratstim(ST);
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\bicomb_wrapper.m',24,0)">bicomb_wrapper at 24</a>
+bicomb_core(EX,OB)
+} 
+ opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\functions\bicomb_core.m',134,0)
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+bicomb_wrapper
+
+Enter subject initials:test
+
+Patching duration for this test session (in minutes)?:0
+
+Is this before/after patching? (B/A):B
+{??? Error using ==> <a href="matlab: opentoline('C:\PsychToolbox\Psychtoolbox\PsychBasic\KbName.m',876,0)">KbName at 876</a>
+Key name "ESCAPE" not recognized. Maybe you need to add KbName('UnifyKeyNames'); to top of your script?
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\functions\bicomb_core.m',71,0)">bicomb_core at 71</a>
+            if keyCode(KbName('ESCAPE'))
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\bicomb_wrapper.m',24,0)">bicomb_wrapper at 24</a>
+bicomb_core(EX,OB)
+} 
+ opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\bicomb_wrapper.m',24,0)
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+bicomb_wrapper
+
+Enter subject initials:test
+
+Patching duration for this test session (in minutes)?:0
+
+Is this before/after patching? (B/A):B
+{??? Error using ==> <a href="matlab: opentoline('C:\PsychToolbox\Psychtoolbox\PsychBasic\KbName.m',876,0)">KbName at 876</a>
+Key name "SPACEBAR" not recognized. Maybe you need to add KbName('UnifyKeyNames'); to top of your script?
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\functions\bicomb_core.m',76,0)">bicomb_core at 76</a>
+            elseif keyCode(KbName('SPACEBAR'))
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\bicomb_wrapper.m',24,0)">bicomb_wrapper at 24</a>
+bicomb_core(EX,OB)
+} 
+ opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\functions\bicomb_core.m',76,0)
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+bicomb_wrapper
+
+Enter subject initials:test
+
+Patching duration for this test session (in minutes)?:0
+
+Is this before/after patching? (B/A):B
+{??? Error using ==> <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\functions\bicomb_core.m',77,0)">bicomb_core at 77</a>
+SPACEBAR!
+
+Error in ==> <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\bicomb_wrapper.m',24,0)">bicomb_wrapper at 24</a>
+bicomb_core(EX,OB)
+} 
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+bicomb_wrapper
+
+Enter subject initials: test
+
+Patching duration for this test session (in minutes)?:0
+
+Is this before/after patching? (B/A):B
+{Warning: Could not find an exact (case-sensitive) match for 'screen'.
+C:\PsychToolbox\Psychtoolbox\PsychBasic\MatlabWindowsFilesR2007a\Screen.mexw32 is a case-insensitive match and
+will be used instead.
+You can improve the performance of your code by using exact
+name matches and we therefore recommend that you update your
+usage accordingly. Alternatively, you can disable this warning using
+warning('off','MATLAB:dispatcher:InexactCaseMatch').
+This warning will become an error in future releases.} 
+> In <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\functions\bicomb_core.m',92,1)">bicomb_core at 92</a>
+  In <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\bicomb_wrapper.m',24,1)">bicomb_wrapper at 24</a>
+ opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\bicomb_wrapper.m',24,1)
+ opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\functions\bicomb_core.m',92,1)
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+bicomb_wrapper
+
+Enter subject initials:test
+
+Patching duration for this test session (in minutes)?:0
+
+Is this before/after patching? (B/A):B
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+bicomb_wrapper
+
+Enter subject initials:test
+
+Patching duration for this test session (in minutes)?:0
+
+Is this before/after patching? (B/A):B
+
+ans =
+
+     0
+
+
+ans =
+
+     0
+
+PsychImaging-Info: Stereomode 2 required - Enabling it.
+Error in function OpenWindow: 	Invalid or missing Screen Number or Window Index
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+bicomb_wrapper
+
+Enter subject initials:test
+
+Patching duration for this test session (in minutes)?:0
+
+Is this before/after patching? (B/A):B
+Tried to prepare a new configuration phase via PsychImaging('PrepareConfiguration'), but did not finalize the previous phase yet.
+You must call the PsychImaging('OpenWindow', ...); command at least once to open an onscreen
+window according to the provided settings, before you can specify settings for additional onscreen windows.
+
+The most likely reason you see this error message is because your script aborted with some error
+before it managed to open the onscreen window. In that case it is best practice to execute a 'clear all'
+command at the Matlab/Octave prompt before you restart your script.
+
+I will restart configuration now and forget the previously made PsychImaging('AddTask', ...); settings.
+{Warning: Tried to prepare a new configuration phase, but you did not finalize the previous phase yet!} 
+> In <a href="matlab: opentoline('C:\PsychToolbox\Psychtoolbox\PsychGLImageProcessing\PsychImaging.m',1090,1)">PsychImaging at 1090</a>
+  In <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\functions\bicomb_core.m',131,1)">bicomb_core>initpsychtoolbox at 131</a>
+  In <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\functions\bicomb_core.m',27,1)">bicomb_core at 27</a>
+  In <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\bicomb_wrapper.m',24,1)">bicomb_wrapper at 24</a>
+
+ans =
+
+     0
+
+
+ans =
+
+     0
+
+PsychImaging-Info: Stereomode 2 required - Enabling it.
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 32-Bit (Version 3.0.11 - Build date: Sep 29 2013).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Will disable DWM because a regular fullscreen onscreen window is opened -> We want best timing and performance.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: Quadro K600/PCIe/SSE2 :: 4.4.0
+PTB-INFO: VBL startline = 1080 , VBL Endline = 1079
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.664479 ms [60.007875 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.662957 ms [60.013357 Hz]. (50 valid samples taken, stddev=0.061407 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Stereo display via vertical image compression enabled (Top=LeftEye, Bot.=RightEye).
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 1061 ...
+PTB-INFO: Will use 32 bits per color component floating point framebuffer for stimulus drawing. Alpha blending should work correctly.
+PTB-INFO: Will use 32 bits per color component floating point framebuffer for stimulus post-processing (if any).
+Building a fragment shader:Reading shader from file C:\PsychToolbox\Psychtoolbox\PsychOpenGL/PsychGLSLShaders/ICMPassThroughShader.frag.txt ...
+Building a fragment shader:Reading shader from file C:\PsychToolbox\Psychtoolbox\PsychOpenGL\PsychGLSLShaders\GenericLuminanceToRGBA8_FormattingShader.frag.txt ...
+uiopen('C:\Users\Alex\Dropbox\Experiments\BiComb\bicomb_wrapper.m',1)
+uiopen('C:\Users\Alex\Dropbox\Experiments\BiComb\bicomb_wrapper.m',1)
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+bicomb_wrapper
+
+Enter subject initials:test
+
+Patching duration for this test session (in minutes)?:0
+
+Is this before/after patching? (B/A):B
+
+ans =
+
+     0
+
+
+ans =
+
+     0
+
+PsychImaging-Info: Stereomode 2 required - Enabling it.
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 32-Bit (Version 3.0.11 - Build date: Sep 29 2013).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Will disable DWM because a regular fullscreen onscreen window is opened -> We want best timing and performance.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: Quadro K600/PCIe/SSE2 :: 4.4.0
+PTB-INFO: VBL startline = 1080 , VBL Endline = 1079
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.664682 ms [60.007147 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.652301 ms [60.051761 Hz]. (50 valid samples taken, stddev=0.096360 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Stereo display via vertical image compression enabled (Top=LeftEye, Bot.=RightEye).
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 1061 ...
+PTB-INFO: Will use 32 bits per color component floating point framebuffer for stimulus drawing. Alpha blending should work correctly.
+PTB-INFO: Will use 32 bits per color component floating point framebuffer for stimulus post-processing (if any).
+Building a fragment shader:Reading shader from file C:\PsychToolbox\Psychtoolbox\PsychOpenGL/PsychGLSLShaders/ICMPassThroughShader.frag.txt ...
+Building a fragment shader:Reading shader from file C:\PsychToolbox\Psychtoolbox\PsychOpenGL\PsychGLSLShaders\GenericLuminanceToRGBA8_FormattingShader.frag.txt ...
+{Warning: Integer operands are required for colon operator when used as index} 
+> In <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\functions\bicomb_core.m',106,1)">bicomb_core>showstimulus at 106</a>
+  In <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\functions\bicomb_core.m',64,1)">bicomb_core at 64</a>
+  In <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\bicomb_wrapper.m',24,1)">bicomb_wrapper at 24</a>
+ opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\functions\bicomb_core.m',106,1)
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+bicomb_wrapper
+
+Enter subject initials:test
+
+Patching duration for this test session (in minutes)?:0
+
+Is this before/after patching? (B/A):B
+
+ans =
+
+     0
+
+
+ans =
+
+     0
+
+PsychImaging-Info: Stereomode 2 required - Enabling it.
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 32-Bit (Version 3.0.11 - Build date: Sep 29 2013).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Will disable DWM because a regular fullscreen onscreen window is opened -> We want best timing and performance.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: Quadro K600/PCIe/SSE2 :: 4.4.0
+PTB-INFO: VBL startline = 1080 , VBL Endline = 1079
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.665342 ms [60.004768 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.651971 ms [60.052952 Hz]. (50 valid samples taken, stddev=0.100540 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Stereo display via vertical image compression enabled (Top=LeftEye, Bot.=RightEye).
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 1061 ...
+PTB-INFO: Will use 32 bits per color component floating point framebuffer for stimulus drawing. Alpha blending should work correctly.
+PTB-INFO: Will use 32 bits per color component floating point framebuffer for stimulus post-processing (if any).
+Building a fragment shader:Reading shader from file C:\PsychToolbox\Psychtoolbox\PsychOpenGL/PsychGLSLShaders/ICMPassThroughShader.frag.txt ...
+Building a fragment shader:Reading shader from file C:\PsychToolbox\Psychtoolbox\PsychOpenGL\PsychGLSLShaders\GenericLuminanceToRGBA8_FormattingShader.frag.txt ...
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+bicomb_wrapper
+
+Enter subject initials:test
+
+Patching duration for this test session (in minutes)?:0
+
+Is this before/after patching? (B/A):B
+
+ans =
+
+     0
+
+
+ans =
+
+     0
+
+PsychImaging-Info: Stereomode 2 required - Enabling it.
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 32-Bit (Version 3.0.11 - Build date: Sep 29 2013).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Will disable DWM because a regular fullscreen onscreen window is opened -> We want best timing and performance.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: Quadro K600/PCIe/SSE2 :: 4.4.0
+PTB-INFO: VBL startline = 1080 , VBL Endline = 1079
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.664554 ms [60.007608 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.653622 ms [60.046996 Hz]. (50 valid samples taken, stddev=0.090249 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Stereo display via vertical image compression enabled (Top=LeftEye, Bot.=RightEye).
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 1061 ...
+PTB-INFO: Will use 32 bits per color component floating point framebuffer for stimulus drawing. Alpha blending should work correctly.
+PTB-INFO: Will use 32 bits per color component floating point framebuffer for stimulus post-processing (if any).
+Building a fragment shader:Reading shader from file C:\PsychToolbox\Psychtoolbox\PsychOpenGL/PsychGLSLShaders/ICMPassThroughShader.frag.txt ...
+Building a fragment shader:Reading shader from file C:\PsychToolbox\Psychtoolbox\PsychOpenGL\PsychGLSLShaders\GenericLuminanceToRGBA8_FormattingShader.frag.txt ...
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+bicomb_wrapper
+
+Enter subject initials:
+Patching duration for this test session (in minutes)?:0
+
+Is this before/after patching? (B/A):B
+
+ans =
+
+     0
+
+
+ans =
+
+     0
+
+PsychImaging-Info: Stereomode 2 required - Enabling it.
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 32-Bit (Version 3.0.11 - Build date: Sep 29 2013).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Will disable DWM because a regular fullscreen onscreen window is opened -> We want best timing and performance.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: Quadro K600/PCIe/SSE2 :: 4.4.0
+PTB-INFO: VBL startline = 1080 , VBL Endline = 1079
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.665356 ms [60.004719 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.650180 ms [60.059409 Hz]. (50 valid samples taken, stddev=0.110410 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Stereo display via vertical image compression enabled (Top=LeftEye, Bot.=RightEye).
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 1061 ...
+PTB-INFO: Will use 32 bits per color component floating point framebuffer for stimulus drawing. Alpha blending should work correctly.
+PTB-INFO: Will use 32 bits per color component floating point framebuffer for stimulus post-processing (if any).
+Building a fragment shader:Reading shader from file C:\PsychToolbox\Psychtoolbox\PsychOpenGL/PsychGLSLShaders/ICMPassThroughShader.frag.txt ...
+Building a fragment shader:Reading shader from file C:\PsychToolbox\Psychtoolbox\PsychOpenGL\PsychGLSLShaders\GenericLuminanceToRGBA8_FormattingShader.frag.txt ...
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+bicomb_wrapper
+
+Enter subject initials:test
+
+Patching duration for this test session (in minutes)?:0
+
+Is this before/after patching? (B/A):B
+
+ans =
+
+     0
+
+
+ans =
+
+     0
+
+PsychImaging-Info: Stereomode 2 required - Enabling it.
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 32-Bit (Version 3.0.11 - Build date: Sep 29 2013).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Will disable DWM because a regular fullscreen onscreen window is opened -> We want best timing and performance.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: Quadro K600/PCIe/SSE2 :: 4.4.0
+PTB-INFO: VBL startline = 1080 , VBL Endline = 1079
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.665261 ms [60.005059 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.653424 ms [60.047711 Hz]. (50 valid samples taken, stddev=0.093243 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Stereo display via vertical image compression enabled (Top=LeftEye, Bot.=RightEye).
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 1061 ...
+PTB-INFO: Will use 32 bits per color component floating point framebuffer for stimulus drawing. Alpha blending should work correctly.
+PTB-INFO: Will use 32 bits per color component floating point framebuffer for stimulus post-processing (if any).
+Building a fragment shader:Reading shader from file C:\PsychToolbox\Psychtoolbox\PsychOpenGL/PsychGLSLShaders/ICMPassThroughShader.frag.txt ...
+Building a fragment shader:Reading shader from file C:\PsychToolbox\Psychtoolbox\PsychOpenGL\PsychGLSLShaders\GenericLuminanceToRGBA8_FormattingShader.frag.txt ...
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+bicomb_wrapper
+
+Enter subject initials:test
+
+Patching duration for this test session (in minutes)?:0
+
+Is this before/after patching? (B/A):B
+
+ans =
+
+     0
+
+
+ans =
+
+     0
+
+PsychImaging-Info: Stereomode 2 required - Enabling it.
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 32-Bit (Version 3.0.11 - Build date: Sep 29 2013).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Will disable DWM because a regular fullscreen onscreen window is opened -> We want best timing and performance.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: Quadro K600/PCIe/SSE2 :: 4.4.0
+PTB-INFO: VBL startline = 1080 , VBL Endline = 1079
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.664554 ms [60.007608 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.652400 ms [60.051404 Hz]. (50 valid samples taken, stddev=0.097522 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Stereo display via vertical image compression enabled (Top=LeftEye, Bot.=RightEye).
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 1061 ...
+PTB-INFO: Will use 32 bits per color component floating point framebuffer for stimulus drawing. Alpha blending should work correctly.
+PTB-INFO: Will use 32 bits per color component floating point framebuffer for stimulus post-processing (if any).
+Building a fragment shader:Reading shader from file C:\PsychToolbox\Psychtoolbox\PsychOpenGL/PsychGLSLShaders/ICMPassThroughShader.frag.txt ...
+Building a fragment shader:Reading shader from file C:\PsychToolbox\Psychtoolbox\PsychOpenGL\PsychGLSLShaders\GenericLuminanceToRGBA8_FormattingShader.frag.txt ...
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+bicomb_wrapper
+
+Enter subject initials:test
+
+Patching duration for this test session (in minutes)?:0
+
+Is this before/after patching? (B/A):B
+
+ans =
+
+     0
+
+
+ans =
+
+     0
+
+PsychImaging-Info: Stereomode 2 required - Enabling it.
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 32-Bit (Version 3.0.11 - Build date: Sep 29 2013).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Will disable DWM because a regular fullscreen onscreen window is opened -> We want best timing and performance.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: Quadro K600/PCIe/SSE2 :: 4.4.0
+PTB-INFO: VBL startline = 1080 , VBL Endline = 1079
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.665268 ms [60.005035 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.651746 ms [60.053762 Hz]. (50 valid samples taken, stddev=0.105230 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Stereo display via vertical image compression enabled (Top=LeftEye, Bot.=RightEye).
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 1061 ...
+PTB-INFO: Will use 32 bits per color component floating point framebuffer for stimulus drawing. Alpha blending should work correctly.
+PTB-INFO: Will use 32 bits per color component floating point framebuffer for stimulus post-processing (if any).
+Building a fragment shader:Reading shader from file C:\PsychToolbox\Psychtoolbox\PsychOpenGL/PsychGLSLShaders/ICMPassThroughShader.frag.txt ...
+Building a fragment shader:Reading shader from file C:\PsychToolbox\Psychtoolbox\PsychOpenGL\PsychGLSLShaders\GenericLuminanceToRGBA8_FormattingShader.frag.txt ...
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+bicomb_wrapper
+
+Enter subject initials:test
+
+Patching duration for this test session (in minutes)?:0
+
+Is this before/after patching? (B/A):B
+
+ans =
+
+     0
+
+
+ans =
+
+     0
+
+PsychImaging-Info: Stereomode 2 required - Enabling it.
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 32-Bit (Version 3.0.11 - Build date: Sep 29 2013).
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Will disable DWM because a regular fullscreen onscreen window is opened -> We want best timing and performance.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAM', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is NVIDIA Corporation :: Quadro K600/PCIe/SSE2 :: 4.4.0
+PTB-INFO: VBL startline = 1080 , VBL Endline = 1079
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.664122 ms [60.009162 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.651085 ms [60.056145 Hz]. (50 valid samples taken, stddev=0.104006 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: Stereo display via vertical image compression enabled (Top=LeftEye, Bot.=RightEye).
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 1061 ...
+PTB-INFO: Will use 32 bits per color component floating point framebuffer for stimulus drawing. Alpha blending should work correctly.
+PTB-INFO: Will use 32 bits per color component floating point framebuffer for stimulus post-processing (if any).
+Building a fragment shader:Reading shader from file C:\PsychToolbox\Psychtoolbox\PsychOpenGL/PsychGLSLShaders/ICMPassThroughShader.frag.txt ...
+Building a fragment shader:Reading shader from file C:\PsychToolbox\Psychtoolbox\PsychOpenGL\PsychGLSLShaders\GenericLuminanceToRGBA8_FormattingShader.frag.txt ...
+{Warning: Could not find an exact (case-sensitive) match for 'waitSecs'.
+C:\PsychToolbox\Psychtoolbox\PsychBasic\MatlabWindowsFilesR2007a\WaitSecs.mexw32 is a case-insensitive match and
+will be used instead.
+You can improve the performance of your code by using exact
+name matches and we therefore recommend that you update your
+usage accordingly. Alternatively, you can disable this warning using
+warning('off','MATLAB:dispatcher:InexactCaseMatch').
+This warning will become an error in future releases.} 
+> In <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\functions\bicomb_core.m',87,1)">bicomb_core at 87</a>
+  In <a href="matlab: opentoline('C:\Users\Alex\Dropbox\Experiments\BiComb\bicomb_wrapper.m',24,1)">bicomb_wrapper at 24</a>
+
+ans =
+
+  5.0797e+003
+
+
+ans =
+
+  5.0798e+003
+
+
+ans =
+
+  5.0798e+003
+
+
+ans =
+
+  5.0799e+003
+
+
+ans =
+
+  5.0799e+003
+
+
+ans =
+
+  5.0800e+003
+
+
+ans =
+
+  5.0800e+003
+
+
+ans =
+
+  5.0801e+003
+
+
+ans =
+
+  5.0801e+003
+
+
+ans =
+
+  5.0802e+003
+
+
+ans =
+
+  5.0802e+003
+
+
+ans =
+
+  5.0804e+003
+
+
+ans =
+
+  5.0804e+003
+
+
+ans =
+
+  5.0805e+003
+
+
+ans =
+
+  5.0805e+003
+
+
+ans =
+
+  5.0806e+003
+
+
+ans =
+
+  5.0806e+003
+
+
+ans =
+
+  5.0807e+003
+
+
+ans =
+
+  5.0807e+003
+
+
+ans =
+
+  5.0808e+003
+
+
+ans =
+
+  5.0808e+003
+
+
+ans =
+
+  5.0809e+003
+
+
+ans =
+
+  5.0809e+003
+
+
+ans =
+
+  5.0810e+003
+
+
+ans =
+
+  5.0810e+003
+
+
+ans =
+
+  5.0811e+003
+
+
+ans =
+
+  5.0811e+003
+
+
+ans =
+
+  5.0812e+003
+
+
+ans =
+
+  5.0812e+003
+
+
+ans =
+
+  5.0813e+003
+
+
+ans =
+
+  5.0813e+003
+
+
+ans =
+
+  5.0814e+003
+
+
+ans =
+
+  5.0814e+003
+
+
+ans =
+
+  5.0815e+003
+
+
+ans =
+
+  5.0816e+003
+
+
+ans =
+
+  5.0816e+003
+
+
+ans =
+
+  5.0817e+003
+
+
+ans =
+
+  5.0817e+003
+
+
+ans =
+
+  5.0818e+003
+
+
+ans =
+
+  5.0818e+003
+
+
+ans =
+
+  5.0819e+003
+
+
+ans =
+
+  5.0819e+003
+
+
+ans =
+
+  5.0820e+003
+
+
+ans =
+
+  5.0820e+003
+
+
+ans =
+
+  5.0821e+003
+
+
+ans =
+
+  5.0821e+003
+
+
+ans =
+
+  5.0822e+003
+
+
+ans =
+
+  5.0822e+003
+
+
+ans =
+
+  5.0823e+003
+
+
+ans =
+
+  5.0823e+003
+
+
+ans =
+
+  5.0824e+003
+
+
+ans =
+
+  5.0829e+003
+
+
+ans =
+
+  5.0835e+003
+
+
+ans =
+
+  5.0835e+003
+
+
+ans =
+
+  5.0836e+003
+
+
+ans =
+
+  5.0836e+003
+
+
+ans =
+
+  5.0837e+003
+
+
+ans =
+
+  5.0837e+003
+
+
+ans =
+
+  5.0838e+003
+
+
+ans =
+
+  5.0838e+003
+
+
+ans =
+
+  5.0839e+003
+
+
+ans =
+
+  5.0839e+003
+
+
+ans =
+
+  5.0840e+003
+
+
+ans =
+
+  5.0840e+003
+
+
+ans =
+
+  5.0841e+003
+
+
+ans =
+
+  5.0842e+003
+
+
+ans =
+
+  5.0842e+003
+
+
+ans =
+
+  5.0843e+003
+
+
+ans =
+
+  5.0843e+003
+
+
+ans =
+
+  5.0844e+003
+
+
+ans =
+
+  5.0844e+003
+
+
+ans =
+
+  5.0845e+003
+
+
+ans =
+
+  5.0845e+003
+
+
+ans =
+
+  5.0846e+003
+
+
+ans =
+
+  5.0846e+003
+
+
+ans =
+
+  5.0847e+003
+
+
+ans =
+
+  5.0847e+003
+
+
+ans =
+
+  5.0848e+003
+
+
+ans =
+
+  5.0848e+003
+
+
+ans =
+
+  5.0849e+003
+
+
+ans =
+
+  5.0849e+003
+
+
+ans =
+
+  5.0850e+003
+
+
+ans =
+
+  5.0850e+003
+
+
+ans =
+
+  5.0851e+003
+
+
+ans =
+
+  5.0851e+003
+
+
+ans =
+
+  5.0852e+003
+
+
+ans =
+
+  5.0852e+003
+
+
+ans =
+
+  5.0853e+003
+
+
+ans =
+
+  5.0853e+003
+
+
+ans =
+
+  5.0854e+003
+
+
+ans =
+
+  5.0854e+003
+
+
+ans =
+
+  5.0855e+003
+
+
+ans =
+
+  5.0855e+003
+
+
+ans =
+
+  5.0856e+003
+
+
+ans =
+
+  5.0856e+003
+
+
+ans =
+
+  5.0857e+003
+
+
+ans =
+
+  5.0857e+003
+
+
+ans =
+
+  5.0858e+003
+
+
+ans =
+
+  5.0860e+003
+
+
+ans =
+
+  5.0865e+003
+
+
+ans =
+
+  5.0865e+003
+
+
+ans =
+
+  5.0866e+003
+
+
+ans =
+
+  5.0866e+003
+
+
+ans =
+
+  5.0867e+003
+
+
+ans =
+
+  5.0867e+003
+
+
+ans =
+
+  5.0868e+003
+
+
+ans =
+
+  5.0870e+003
+
+
+ans =
+
+  5.0870e+003
+
+
+ans =
+
+  5.0870e+003
+
+
+ans =
+
+  5.0871e+003
+
+
+ans =
+
+  5.0871e+003
+
+
+ans =
+
+  5.0872e+003
+
+
+ans =
+
+  5.0872e+003
+
+
+ans =
+
+  5.0873e+003
+
+
+ans =
+
+  5.0873e+003
+
+
+ans =
+
+  5.0874e+003
+
+
+ans =
+
+  5.0874e+003
+
+
+ans =
+
+  5.0875e+003
+
+
+ans =
+
+  5.0875e+003
+
+
+ans =
+
+  5.0876e+003
+
+
+ans =
+
+  5.0876e+003
+
+
+ans =
+
+  5.0878e+003
+
+
+ans =
+
+  5.0878e+003
+
+
+ans =
+
+  5.0879e+003
+
+
+ans =
+
+  5.0879e+003
+
+
+ans =
+
+  5.0880e+003
+
+
+ans =
+
+  5.0880e+003
+
+
+ans =
+
+  5.0881e+003
+
+
+ans =
+
+  5.0881e+003
+
+
+ans =
+
+  5.0882e+003
+
+
+ans =
+
+  5.0882e+003
+
+
+ans =
+
+  5.0883e+003
+
+
+ans =
+
+  5.0885e+003
+
+
+ans =
+
+  5.0885e+003
+
+
+ans =
+
+  5.0885e+003
+
+
+ans =
+
+  5.0886e+003
+
+
+ans =
+
+  5.0886e+003
+
+
+ans =
+
+  5.0887e+003
+
+
+ans =
+
+  5.0887e+003
+
+
+ans =
+
+  5.0888e+003
+
+
+ans =
+
+  5.0888e+003
+
+
+ans =
+
+  5.0889e+003
+
+
+ans =
+
+  5.0889e+003
+
+
+ans =
+
+  5.0890e+003
+
+
+ans =
+
+  5.0890e+003
+
+
+ans =
+
+  5.0893e+003
+
+
+ans =
+
+  5.0899e+003
+
+
+ans =
+
+  5.0900e+003
+
+
+ans =
+
+  5.0900e+003
+
+
+ans =
+
+  5.0901e+003
+
+
+ans =
+
+  5.0901e+003
+
+
+ans =
+
+  5.0902e+003
+
+
+ans =
+
+  5.0902e+003
+
+
+ans =
+
+  5.0903e+003
+
+
+ans =
+
+  5.0903e+003
+
+
+ans =
+
+  5.0904e+003
+
+
+ans =
+
+  5.0904e+003
+
+
+ans =
+
+  5.0905e+003
+
+
+ans =
+
+  5.0905e+003
+
+
+ans =
+
+  5.0906e+003
+
+
+ans =
+
+  5.0906e+003
+
+
+ans =
+
+  5.0907e+003
+
+
+ans =
+
+  5.0907e+003
+
+
+ans =
+
+  5.0908e+003
+
+
+ans =
+
+  5.0908e+003
+
+
+ans =
+
+  5.0909e+003
+
+
+ans =
+
+  5.0909e+003
+
+
+ans =
+
+  5.0910e+003
+
+
+ans =
+
+  5.0911e+003
+
+
+ans =
+
+  5.0911e+003
+
+
+ans =
+
+  5.0912e+003
+
+
+ans =
+
+  5.0912e+003
+
+
+ans =
+
+  5.0913e+003
+
+
+ans =
+
+  5.0913e+003
+
+
+ans =
+
+  5.0914e+003
+
+
+ans =
+
+  5.0915e+003
+
+
+ans =
+
+  5.0915e+003
+
+
+ans =
+
+  5.0916e+003
+
+
+ans =
+
+  5.0916e+003
+
+
+ans =
+
+  5.0917e+003
+
+
+ans =
+
+  5.0917e+003
+
+
+ans =
+
+  5.0918e+003
+
+
+ans =
+
+  5.0918e+003
+
+
+ans =
+
+  5.0919e+003
+
+
+ans =
+
+  5.0919e+003
+
+
+ans =
+
+  5.0920e+003
+
+
+ans =
+
+  5.0920e+003
+
+
+ans =
+
+  5.0921e+003
+
+
+ans =
+
+  5.0921e+003
+
+
+ans =
+
+  5.0922e+003
+
+
+ans =
+
+  5.0922e+003
+
+
+ans =
+
+  5.0923e+003
+
+
+ans =
+
+  5.0923e+003
+
+
+ans =
+
+  5.0924e+003
+
+
+ans =
+
+  5.0924e+003
+
+
+ans =
+
+  5.0925e+003
+
+
+ans =
+
+  5.0925e+003
+
+
+ans =
+
+  5.0926e+003
+
+
+ans =
+
+  5.0926e+003
+
+
+ans =
+
+  5.0927e+003
+
+
+ans =
+
+  5.0927e+003
+
+
+ans =
+
+  5.0929e+003
+
+
+ans =
+
+  5.0929e+003
+
+
+ans =
+
+  5.0930e+003
+
+
+ans =
+
+  5.0930e+003
+
+
+ans =
+
+  5.0931e+003
+
+
+ans =
+
+  5.0931e+003
+
+
+ans =
+
+  5.0932e+003
+
+
+ans =
+
+  5.0932e+003
+
+
+ans =
+
+  5.0933e+003
+
+
+ans =
+
+  5.0933e+003
+
+
+ans =
+
+  5.0934e+003
+
+
+ans =
+
+  5.0934e+003
+
+
+ans =
+
+  5.0935e+003
+
+
+ans =
+
+  5.0935e+003
+
+
+ans =
+
+  5.0936e+003
+
+
+ans =
+
+  5.0936e+003
+
+
+ans =
+
+  5.0937e+003
+
+
+ans =
+
+  5.0937e+003
+
+
+ans =
+
+  5.0938e+003
+
+
+ans =
+
+  5.0938e+003
+
+
+ans =
+
+  5.0939e+003
+
+
+ans =
+
+  5.0939e+003
+
+
+ans =
+
+  5.0940e+003
+
+
+ans =
+
+  5.0940e+003
+
+
+ans =
+
+  5.0941e+003
+
+
+ans =
+
+  5.0941e+003
+
+
+ans =
+
+  5.0942e+003
+
+
+ans =
+
+  5.0942e+003
+
+
+ans =
+
+  5.0943e+003
+
+
+ans =
+
+  5.0943e+003
+
+
+ans =
+
+  5.0944e+003
+
+
+ans =
+
+  5.0944e+003
+
+
+ans =
+
+  5.0945e+003
+
+
+ans =
+
+  5.0945e+003
+
+
+ans =
+
+  5.0946e+003
+
+
+ans =
+
+  5.0946e+003
+
+
+ans =
+
+  5.0947e+003
+
+
+ans =
+
+  5.0947e+003
+
+
+ans =
+
+  5.0948e+003
+
+
+ans =
+
+  5.0948e+003
+
+
+ans =
+
+  5.0949e+003
+
+
+ans =
+
+  5.0949e+003
+
+
+ans =
+
+  5.0950e+003
+
+
+ans =
+
+  5.0950e+003
+
+
+ans =
+
+  5.0951e+003
+
+
+ans =
+
+  5.0951e+003
+
+
+ans =
+
+  5.0952e+003
+
+
+ans =
+
+  5.0952e+003
+
+
+ans =
+
+  5.0953e+003
+
+
+ans =
+
+  5.0953e+003
+
+
+ans =
+
+  5.0954e+003
+
+
+ans =
+
+  5.0954e+003
+
+
+ans =
+
+  5.0955e+003
+
+
+ans =
+
+  5.0955e+003
+
+
+ans =
+
+  5.0956e+003
+
+
+ans =
+
+  5.0956e+003
+
+
+ans =
+
+  5.0957e+003
+
+
+ans =
+
+  5.0957e+003
+
+
+ans =
+
+  5.0958e+003
+
+
+ans =
+
+  5.0958e+003
+
+
+ans =
+
+  5.0959e+003
+
+
+ans =
+
+  5.0959e+003
+
+
+ans =
+
+  5.0960e+003
+
+
+ans =
+
+  5.0960e+003
+
+
+ans =
+
+  5.0961e+003
+
+
+ans =
+
+  5.0961e+003
+
+
+ans =
+
+  5.0962e+003
+
+
+ans =
+
+  5.0962e+003
+
+
+ans =
+
+  5.0963e+003
+
+
+ans =
+
+  5.0963e+003
+
+
+ans =
+
+  5.0964e+003
+
+
+ans =
+
+  5.0964e+003
+
+
+ans =
+
+  5.0965e+003
+
+
+ans =
+
+  5.0965e+003
+
+
+ans =
+
+  5.0966e+003
+
+
+ans =
+
+  5.0966e+003
+
+
+ans =
+
+  5.0967e+003
+
+
+ans =
+
+  5.0967e+003
+
+
+ans =
+
+  5.0968e+003
+
+
+ans =
+
+  5.0968e+003
+
+
+ans =
+
+  5.0969e+003
+
+
+ans =
+
+  5.0969e+003
+
+
+ans =
+
+  5.0970e+003
+
+
+ans =
+
+  5.0970e+003
+
+
+ans =
+
+  5.0971e+003
+
+
+ans =
+
+  5.0971e+003
+
+
+ans =
+
+  5.0972e+003
+
+
+ans =
+
+  5.0972e+003
+
+
+ans =
+
+  5.0973e+003
+
+
+ans =
+
+  5.0973e+003
+
+
+ans =
+
+  5.0974e+003
+
+
+ans =
+
+  5.0974e+003
+
+
+ans =
+
+  5.0975e+003
+
+
+ans =
+
+  5.0975e+003
+
+
+ans =
+
+  5.0976e+003
+
+
+ans =
+
+  5.0976e+003
+
+
+ans =
+
+  5.0977e+003
+
+
+ans =
+
+  5.0977e+003
+
+
+ans =
+
+  5.0978e+003
+
+
+ans =
+
+  5.0978e+003
+
+
+ans =
+
+  5.0979e+003
+
+
+ans =
+
+  5.0979e+003
+
+
+ans =
+
+  5.0980e+003
+
+
+ans =
+
+  5.0980e+003
+
+
+ans =
+
+  5.0981e+003
+
+
+ans =
+
+  5.0981e+003
+
+
+ans =
+
+  5.0982e+003
+
+
+ans =
+
+  5.0982e+003
+
+
+ans =
+
+  5.0983e+003
+
+
+ans =
+
+  5.0983e+003
+
+
+ans =
+
+  5.0984e+003
+
+
+ans =
+
+  5.0984e+003
+
+
+ans =
+
+  5.0985e+003
+
+
+ans =
+
+  5.0985e+003
+
+
+ans =
+
+  5.0986e+003
+
+
+ans =
+
+  5.0986e+003
+
+
+ans =
+
+  5.0987e+003
+
+
+ans =
+
+  5.0987e+003
+
+
+ans =
+
+  5.0988e+003
+
+
+ans =
+
+  5.0988e+003
+
+
+ans =
+
+  5.0989e+003
+
+
+ans =
+
+  5.0989e+003
+
+
+ans =
+
+  5.0990e+003
+
+
+ans =
+
+  5.0990e+003
+
+
+ans =
+
+  5.0991e+003
+
+
+ans =
+
+  5.0991e+003
+
+
+ans =
+
+  5.0992e+003
+
+
+ans =
+
+  5.0992e+003
+
+
+ans =
+
+  5.0993e+003
+
+
+ans =
+
+  5.0993e+003
+
+
+ans =
+
+  5.0994e+003
+
+
+ans =
+
+  5.0994e+003
+
+
+ans =
+
+  5.0995e+003
+
+
+ans =
+
+  5.0995e+003
+
+
+ans =
+
+  5.0996e+003
+
+
+ans =
+
+  5.0996e+003
+
+
+ans =
+
+  5.0997e+003
+
+
+ans =
+
+  5.0997e+003
+
+
+ans =
+
+  5.0998e+003
+
+
+ans =
+
+  5.0998e+003
+
+
+ans =
+
+  5.0999e+003
+
+
+ans =
+
+  5.0999e+003
+
+
+ans =
+
+  5.1000e+003
+
+
+ans =
+
+  5.1000e+003
+
+
+ans =
+
+  5.1001e+003
+
+
+ans =
+
+  5.1001e+003
+
+
+ans =
+
+  5.1002e+003
+
+
+ans =
+
+  5.1002e+003
+
+
+ans =
+
+  5.1003e+003
+
+
+ans =
+
+  5.1003e+003
+
+
+ans =
+
+  5.1004e+003
+
+
+ans =
+
+  5.1004e+003
+
+
+ans =
+
+  5.1005e+003
+
+
+ans =
+
+  5.1005e+003
+
+
+ans =
+
+  5.1006e+003
+
+
+ans =
+
+  5.1006e+003
+
+
+ans =
+
+  5.1007e+003
+
+
+ans =
+
+  5.1007e+003
+
+
+ans =
+
+  5.1008e+003
+
+
+ans =
+
+  5.1008e+003
+
+
+ans =
+
+  5.1009e+003
+
+
+ans =
+
+  5.1009e+003
+
+
+ans =
+
+  5.1010e+003
+
+
+ans =
+
+  5.1010e+003
+
+
+
+PTB-INFO: There are still 730 textures, offscreen windows or proxy windows open. Screen('CloseAll') will auto-close them.
+PTB-INFO: This may be fine for studies where you only use a few textures or windows, but a large number of open
+PTB-INFO: textures or offscreen windows can be an indication that you forgo

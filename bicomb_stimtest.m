@@ -1,0 +1,177 @@
+function bicomb_stimtest
+
+close all
+
+if nargin < 1 % test mode
+    EX.testEye   = 1; % Eye with variable contrast, 1 = Left, 2 = Right. 
+    EX.eyeStr    = {'L','R'};
+    EX.sfList    = [0.3, 0.3]; % spatial frequency for each eye
+end
+
+doShowOnMonitor = 0;
+whichScreen = 0;
+scrHeight   = 800;
+
+ST = defstim(scrHeight);
+
+yOffset = 0;
+    
+imLines = zeros(ST.imSz);
+xOn = ST.imSz/4; xOff = xOn+round(ST.imSz/8);
+yOn = ST.imSz/2-1+yOffset; yOff = yOn+2;
+imLines(yOn:yOff,xOn:xOff) = -1;
+imLines = imLines + fliplr(imLines);
+
+for i = 2:-1:1 % 1 = left eye, 2 = right eye
+    
+    ST.thetaDeg = 90;
+    ST.phaseDeg = -90+(2*i-3)*22.5;
+    ST.sf       = EX.sfList(i);
+    imGrat(:,:,i)      = getgratstim(ST);
+    imToShow(:,:,i)    = imGrat(:,:,i) + imLines + ST.overlay;
+
+    figure
+    imshow((imToShow(:,:,i)+1)./2)
+    
+end
+
+if doShowOnMonitor
+    showonmonitor((imToShow+1)./2,whichScreen)
+end
+
+return
+
+function showonmonitor(imToShow,whichScreen)
+
+    PsychImaging('PrepareConfiguration')
+    PsychImaging('AddTask', 'General', 'SideBySideCompressedStereo')
+    PsychImaging('AddTask', 'General', 'FloatingPoint32Bit');
+    PsychImaging('AddTask', 'General', 'EnablePseudoGrayOutput');
+
+    % PsychImaging('AddTask', 'LeftView',  'StereoCrosstalkReduction', 'SubtractOther', crossTalkGain);
+    % PsychImaging('AddTask', 'RightView', 'StereoCrosstalkReduction', 'SubtractOther', crossTalkGain);
+
+    try
+
+        [windowPtr,~] = PsychImaging('OpenWindow', whichScreen, [], [], [], 102);
+        [ST.screenWidth, ST.screenHeight] = Screen('WindowSize', windowPtr);
+        r1 = [0 0 ST.screenHeight ST.screenHeight];
+        destRect = CenterRectOnPoint(r1, ST.screenWidth*0.5, ST.screenHeight*0.5);
+
+        LoadPsychHID;
+        KbName('UnifyKeyNames');
+
+        doAbort = 0;
+
+        while ~doAbort
+            for i = 0:1
+                Screen('SelectStereoDrawBuffer', windowPtr, i);
+                Screen('FillRect', windowPtr, 0.5);
+                stimFrame = Screen('MakeTexture', windowPtr,  imToShow(:,:,i+1), [], [], 2);
+                destRect = CenterRectOnPoint(r1, ST.screenWidth*0.5, ST.screenHeight*0.5);
+                Screen('DrawTexture', windowPtr, stimFrame, [], destRect);
+            end
+            Screen('Flip', windowPtr);
+
+            pause(0.01);
+
+            keyIsPressed = 0;
+
+            while ~keyIsPressed
+                [~, ~, keyCode] = PsychHID('KbCheck');
+                if keyCode(KbName('ESCAPE'))
+                    keyIsPressed = 1;
+                    doAbort = 1;
+                end
+            end
+        end
+
+    catch ME
+
+        save('lasterror.mat','ME')
+        Screen('CloseAll')
+
+    end
+
+    Screen('CloseAll')
+
+return
+
+function ST = defstim(scrHeight)
+
+    ST.imSz      = scrHeight; % (pixels)
+    ST.pixPerDeg = 32; 
+    ST.gratW     = 6;   % (deg)
+    ST.gratH     = 6;
+    ST.spatSigma = 2;   % (deg)
+    ST.fusGrain  = ST.pixPerDeg/2;
+    ST.fusBrd    = ST.pixPerDeg;
+    
+    if ST.imSz/ST.fusGrain ~= round(ST.imSz/ST.fusGrain)
+        error('ST.imSz/ST.fusGrain ~= round(ST.imSz/ST.fusGrain)')
+    end
+
+    ST.overlayC  = 0.9;
+    ST.overlay   = getfusionlock(ST);
+    ST.cMax      = 0.99;
+    ST.phaseDeg  = 0;
+
+return
+
+function imGrat = getgratstim(ST)
+
+    thetaRad = ST.thetaDeg * (pi/180);
+    phaseRad = ST.phaseDeg * (pi/180);
+    x = linspace(-(ST.imSz/ST.pixPerDeg)*pi, ...
+                  (ST.imSz/ST.pixPerDeg)*pi,ST.imSz);
+
+    [xx,yy] = meshgrid(x);
+    u = xx .* cos(thetaRad) - yy .* sin(thetaRad);
+
+    imSin = sin(u.*ST.sf+phaseRad);
+
+    imEnvW = ones(ST.imSz);
+    imEnvH = ones(ST.imSz);
+    
+    x = linspace(-(ST.imSz/(2*ST.pixPerDeg)), ...
+                  (ST.imSz/(2*ST.pixPerDeg)),ST.imSz);
+    [xx,yy] = meshgrid(x);
+    
+    imEnvW(xx<(-ST.gratW/2)) = 0;
+    imEnvW(xx>(ST.gratW/2+1/ST.pixPerDeg)) = 0;
+    imEnvH(yy<(-ST.gratH/2)) = 0;
+    imEnvH(yy>(ST.gratH/2+1/ST.pixPerDeg)) = 0;
+    
+    imGauss = getgauss(64,ST.spatSigma);
+    
+    imEnv = conv2(imEnvH .* imEnvW,imGauss,'same');
+
+    imGrat = imSin .* imEnv;
+
+return
+
+function im = getgauss(imSize,sigmaPix)
+
+    x = (1:imSize)-imSize/2-0.5;
+    [xx,yy] = meshgrid(x,x);
+
+    im = normal(xx, sigmaPix) .* normal(yy, sigmaPix);
+
+return
+
+function y = normal(x,sigma)
+
+    y = (1/(sigma*sqrt(2*pi))) .* exp(-x.^2/(2*sigma^2));
+
+return
+
+function imLock = getfusionlock(ST)
+
+    noiseSamples = randi(2,[ST.imSz/ST.fusGrain,ST.imSz/ST.fusGrain])*2-3;
+    imNoise      = imresize(noiseSamples,ST.fusGrain,'nearest');
+    imMask       = zeros(ST.imSz);
+    imMask((3*ST.fusBrd+1):end-3*ST.fusBrd,(3*ST.fusBrd+1):end-3*ST.fusBrd) = 1;
+    imMask((4*ST.fusBrd+1):end-4*ST.fusBrd,(4*ST.fusBrd+1):end-4*ST.fusBrd) = 0;
+    imLock = imNoise .* imMask .* 1;
+
+return
